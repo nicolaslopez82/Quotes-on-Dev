@@ -1,0 +1,13 @@
+// Search page styles
+
+.search {
+    .page-header {
+        border-bottom: $border__dashed;
+    }
+
+    .number-pagination {
+        span, a {
+            padding-right: $base__space-unit/2;
+        }
+    }
+}

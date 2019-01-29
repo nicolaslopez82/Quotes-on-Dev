@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+.site {
+    margin: $base__space-unit/2;
+
+    @include tablet {
+        margin: $base__space-unit/1.5;
+    }
+
+    @include desktop {
+        width: $site-with;
+        margin: auto;
+        margin-top: $base__space-unit;
+    }
+}
+
+.site-content {
+    .fa-quote-left, .fa-quote-right {
+        display: none;
+    }
+    @include desktop {
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+
+        .content-area {
+            margin: 0 $base__space-unit*2;
+        }
+        .fa-quote-left, .fa-quote-right {
+            display: inline-block;
+            justify-self: center;
+            margin-top: $base__space-unit*1.8;
+            font-size: 7rem;
+            color: $color__green-brand;
+        }
+    }
+
+    .button-wrapper {
+        width: 100%;
+    }
+}
+
+.home-page, .single-quote, .archives {
+    article {
+        font-size: 1.3rem;
+        margin-bottom: $base__space-unit*2;
+    
+        .entry-header {
+            width: 100%;
+    
+            @include tablet {
+                font-size: 1.7rem;
+            }
+    
+            @include desktop {
+                font-size: 2.5rem;
+            }
+        }
+    
+        .entry-content {
+            .author {
+                &::before {
+                    content: "\2014";
+                    padding-right: $base__space-unit / 4;
+                }
+            }
+
+            #quote-source {
+                font-style: italic;
+            }
+        }  
+    }
+
+    .button-wrapper {
+        @include desktop {
+            text-align: center;
+        }
+    }
+}
+
+.entry-header, .page-header {
+    h1 {
+        margin: $base__space-unit*2 0 $base__space-unit 0;
+    }
+}

@@ -1,0 +1,38 @@
+// Archive page styles and archives for categories & tags
+
+.archives {
+    .page-header, article {
+        border-bottom: $border__dashed;
+    }
+
+    article {
+        padding-bottom: $base__space-unit*2;
+    }
+
+    .nav-links {
+        span, a {
+            padding-right: $base__space-unit/2;
+        }
+    }
+}
+
+.quote-authors, .categories, .tags {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            padding-right: $base__space-unit;
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include tablet {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border:  2px solid $color__green-brand;
+	border-radius: 3px;
+	background: transparent;
+	color: $color__green-brand;
+	padding: $base__space-unit/3 $base__space-unit*1.5;
+	text-transform: capitalize;
+	font-weight: bold;
+	@include tablet {
+		font-size: 1.2rem;
+	}
+	@include desktop {
+		position: relative;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color__green-brand-dark;
+		border-color: $color__green-brand-dark;
+		outline: 0;
+	}
+}
+
+/* Fields */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	border:  2px solid $color__green-brand;
+	border-radius: 3px;
+	background: transparent;
+	// color: $color__green-brand;
+	display: block;
+	margin-top: $base__space-unit/2;
+	width: 50%;
+
+	&:focus {
+		outline: 0;
+		border-color: $color__text-main;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+	resize: none;
+}
+
+
+
+.search-form {
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.search-field {
+		width: 250px;
+		display: inline-block;
+		margin-right: $base__space-unit/2;
+		padding: $base__space-unit/4;
+
+		@include tablet {
+			font-size: 1.2rem;	
+		}
+	}
+	.search-submit {
+		border: 0;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+	}
+}

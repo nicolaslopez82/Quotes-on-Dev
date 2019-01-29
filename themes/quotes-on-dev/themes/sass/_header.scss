@@ -1,0 +1,23 @@
+// Page header
+
+.site-header { 
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    img { 
+        margin-top: $base__space-unit*2;
+        
+        height: 45px;
+
+        @include tablet {
+            height: 75px;
+        }
+
+        @include desktop {
+            height: 110px;
+            margin-bottom: $base__space-unit;
+        }
+    }
+}
