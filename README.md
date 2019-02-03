@@ -62,11 +62,6 @@
 * Nicolas Lopez - nicolaslopez82 - Quotes on Dev Wordpress site.
 ----
 
-# **Contributing:**
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Please make sure to update tests as appropriate.
-----
-
 # **License:**
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
